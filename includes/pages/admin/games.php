@@ -1,5 +1,5 @@
 <?php
-if (!isset($_SESSION['user']) || isset($_SESSION['user']) && $_SESSION['user']->role_id != 1) {
+if (!isset($_SESSION['user']) || isset($_SESSION['user']) && $_SESSION['user']->role_id != 2) {
     header("Location: index.php?page=errorrs&code=403");
 }
 $publishers = getAvailablePublishers();
@@ -17,7 +17,7 @@ $pages = gamePagination();
     </div>
     <div class="row mt-2">
         <div class="col-lg-8">
-            <div class="table-responsive-sm table-responsive-md">
+            <div class="table-responsive-sm table-responsive md">
                 <table class="table text-center align-middle">
                     <thead>
                         <tr>
