@@ -1,5 +1,5 @@
 <?php
-if (!isset($_SESSION['user']) || isset($_SESSION['user']) && $_SESSION['user']->role_id != 1) {
+if (!isset($_SESSION['user']) || isset($_SESSION['user']) && $_SESSION['user']->role_id != 2) {
     header("Location: index.php?page=errors&code=403");
 }
 $publishers = getAllPublishers();
