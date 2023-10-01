@@ -14,9 +14,9 @@ $(document).ready(function () {
           dataType: "json",
           success: function (response) {
             if(response == 2){
-              window.location.href= 'index.php'
+              window.location.href= 'admin.php'
             }else{
-              window.location.href='admin.php'
+              window.location.href='index.php'
             }
           },error:function(jqXHR,statusTxt,xhr){
             responseMessage(jqXHR.responseJSON, 'danger', 'login-message')
