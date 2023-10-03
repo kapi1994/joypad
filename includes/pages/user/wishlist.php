@@ -7,6 +7,7 @@ $wishlistItems = getWishlistItems($user_id);
 ?>
 <div class="container">
     <div class="row mt-5" id="wishlist_items">
+        <div class="d-none my-2" id="wishlist-message"></div>
         <?php
         if (count($wishlistItems) > 0) :
             foreach ($wishlistItems as $wishlistItem) : ?>
